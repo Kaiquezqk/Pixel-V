@@ -216,16 +216,15 @@ header .container-grid {
     flex-wrap: wrap;
 }
 
-.linha-roxa{
+.linha-roxa {
 
-position: absolute;
-z-index: -1;
-top:calc(505- 125px) 250px;
+    position: absolute;
+    z-index: -1;
+    top: calc(505- 125px) 250px;
 
-height: 250px;
-width: 100vw;
-background: linear-gradient(0deg, rgba(36, 0, 105, 1 )
-0%, rgba(71, 0, 207, 1)100%);
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1) 0%, rgba(71, 0, 207, 1)100%);
 }
 
 #servicos .card {
@@ -251,46 +250,52 @@ background: linear-gradient(0deg, rgba(36, 0, 105, 1 )
     font-family: "Recusrsive", Sans-linear-bold;
     text-align: center;
 }
-#servicos .card p{
-    font-family: "Recursive" , Sans-linear;
-font-size: 20px;
-margin-bottom: 20px;
-line-height: 1.5;
+
+#servicos .card p {
+    font-family: "Recursive", Sans-linear;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
-#servicos .card svg{
+
+#servicos .card svg {
     color: var(--roxo-pixelV);
     height: 75px;
 }
-#servicos .card:hover{
+
+#servicos .card:hover {
     border: solid 3px var(--verde-pixel);
 
 
 }
-#servicos .card:hover h3{
+
+#servicos .card:hover h3 {
     color: var(--verde-pixel);
 }
 
-#servicos .card:hover svg{
-fill: var(--verde-pixel);
+#servicos .card:hover svg {
+    fill: var(--verde-pixel);
 }
+
 /* ----------------------- Cases de sucesso ---------------------------- */
-#cases h2{
+#cases h2 {
     margin-right: 5px;
 }
 
-#cases .titulo{
+#cases .titulo {
     justify-content: center;
     margin-bottom: 55px;
 }
 
-#cases{
+#cases {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     margin-bottom: 120px;
 }
-#cases img{
+
+#cases img {
     height: 300px;
     border-radius: 40px;
 }
@@ -299,3 +304,139 @@ fill: var(--verde-pixel);
     max-width: 1170px;
     width: 90%;
 }
+
+
+/* ------------------------------------contato---------------------------------- */
+
+
+
+#contatos {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+#contatos .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+
+}
+
+#contatos h2 {
+    margin-left: 5px;
+}
+
+#contatos form {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--contato);
+    border: solid var(--roxo-pixelV);
+
+    color: var(--preto);
+    font-family: "Recursive", Sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+
+}
+
+.campo-descricao {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+
+}
+
+.campo-descricao textarea{
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+    
+}
+.campo-lable,
+.campo-descricao label{
+    margin-bottom: 15px;
+}
+.campo input,
+.campo-descricao textarea{
+font-family: "Recursive" , sans-linear;
+font-size: 17px;
+}
+
+.campo input::placeholder
+.campo-descricao textarea::placeholder{
+    color: #a0a0a0a0;
+}
+.campo input:focus,
+.campo-descricao textarea:focus{
+    outline: 2px solid var(--verde-pixel);
+
+}
+    #contato form button{
+       height: 40px;
+       width: 60%;
+
+       background-color: var(--roxo-pixelV);
+       color: var(--branco);
+        
+
+       border: none;
+       border-radius: 4px;
+
+       font-size: 17px;
+       font-family: "Recursive", sans-linear;
+       font-weight: 700;
+
+       text-transform: uppercase;
+       cursor: pointer;
+       transition: background-color 500ms;
+    }
