@@ -273,6 +273,29 @@ line-height: 1.5;
 #servicos .card:hover svg{
 fill: var(--verde-pixel);
 }
+/* ----------------------- Cases de sucesso ---------------------------- */
+#cases h2{
+    margin-right: 5px;
+}
 
+#cases .titulo{
+    justify-content: center;
+    margin-bottom: 55px;
+}
 
+#cases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+#cases img{
+    height: 300px;
+    border-radius: 40px;
+}
 
+#meuCarrosel {
+    max-width: 1170px;
+    width: 90%;
+}
